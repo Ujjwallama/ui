@@ -14,7 +14,7 @@ local MainTab = Window:CreateTab("Farming", nil) -- "Farming" is the tab name
 
 -- 4. Create a button that runs your RSpy/Dex code
 local Button = MainTab:CreateButton({
-   Name = "Start Auto-Collect Coins",
+   Name = "Auto Farm",
    Callback = function()
        -- YOUR SCRIPT GOES HERE
        local coinFolder = workspace.Map.SpawnedCoins
