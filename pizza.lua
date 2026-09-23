@@ -17,8 +17,11 @@ local MyButton = MainTab:CreateButton({
    Name = "My Custom Action", 
    Callback = function()
        
-       -- Delete the print statement below and paste your new RSpy/Dex code here
-       print("My custom button was clicked!")
+       -local args = {
+	"LemonStand"
+}
+workspace:WaitForChild("Tycoon3"):WaitForChild("Remotes"):WaitForChild("WakeIncomeStream"):InvokeServer(unpack(args))
+
        
    end,
 })
